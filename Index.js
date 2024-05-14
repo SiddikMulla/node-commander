@@ -1,6 +1,8 @@
 const { program } = require('commander')
-const createPassword=require("./utils/createPassword")
+const createPassword = require("./utils/createPassword")
 const log = console.log
+// const chalk = require('chalk')
+
 program
     .version('1.1.0')
     .description("Simple Pass Generator")
