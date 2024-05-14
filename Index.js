@@ -6,6 +6,10 @@ program
 
 
 program
-.option('-l, --length <number>', 'length of password','8').parse()
+.option('-l, --length <number>', 'length of password','8')
+.option('-s, --save', 'Save as Password.txt')
+.option('-nn, --no-number', 'remove Numbers')
+.option('-ns, --no-symbols', 'remove Symbols')
+.parse()
 
 console.log(program.opts());
