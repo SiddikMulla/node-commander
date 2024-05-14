@@ -6,8 +6,6 @@ program
 
 
 program
-.command('generate')
-.action(()=>{
-    console.log("Generated")
-})
-.parse()
+.option('-l, --length <number>', 'length of password','8').parse()
+
+console.log(program.opts());
