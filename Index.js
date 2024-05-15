@@ -22,4 +22,4 @@ const generatedPassword = createPassword(length, number, symbols)
 
 
 //Print Generated Password Here
-log(chalk.red(generatedPassword));
+log(chalk.yellow(chalk.bold("Generated Password: "))+chalk.red(chalk.bold(generatedPassword)));
