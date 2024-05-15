@@ -15,4 +15,4 @@ const generatedPassword = (length, chars) => {
     }
     return password;
 }
-module.exports = createPassword
+export default createPassword;

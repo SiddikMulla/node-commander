@@ -1,10 +1,10 @@
-const { program } = require('commander')
-const createPassword = require("./utils/createPassword")
+import { program } from 'commander'
+import chalk from 'chalk'
+import createPassword from './utils/createPassword.js'
 const log = console.log
-// const chalk = require('chalk')
 
 program
-    .version('1.1.0')
+    .version('2.1.0')
     .description("Simple Pass Generator")
 
 
@@ -22,4 +22,4 @@ const generatedPassword = createPassword(length, number, symbols)
 
 
 //Print Generated Password Here
-log(generatedPassword);
+log(chalk.red(generatedPassword));
