@@ -13,4 +13,4 @@ const savePassword = (password) => {
         })
     })
 }
-export default savePassword;
+export default savePassword
